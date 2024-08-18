@@ -12,10 +12,6 @@ spec:
   - key: "key1"
     operator: "Equal"
     value: "value1"
-    effect: "NoSchedule"
-    resources:
-      limits:
-        memory: "32Mi"
-        cpu: "0.2"
+    effect: "NoSchedule"    
     ports:
       - containerPort: 80
