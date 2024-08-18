@@ -8,6 +8,10 @@ spec:
   containers:
   - name: argocd-helloworld
     image: nginx
+  tolerations:
+  - key: "node-role.kubernetes.io/master"
+    operator: "Exists"
+    effect: "NoSchedule"
     resources:
       limits:
         memory: "32Mi"
