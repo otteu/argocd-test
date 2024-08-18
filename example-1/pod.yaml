@@ -13,5 +13,4 @@ spec:
     operator: "Equal"
     value: "value1"
     effect: "NoSchedule"    
-    ports:
-      - containerPort: 80
+
