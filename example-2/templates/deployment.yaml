@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
       - name: example-2-nginx
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        image: "otteu/api-tester"
         resources:
           limits:
             memory: "64Mi"
