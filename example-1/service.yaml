@@ -6,5 +6,5 @@ spec:
   selector:
     app: argocd-helloworld
   ports:
-  - port: 80
+  - port: 9009
     targetPort: 80

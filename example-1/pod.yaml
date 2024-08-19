@@ -7,10 +7,10 @@ metadata:
 spec:
   containers:
   - name: argocd-helloworld
-    image: nginx:latest
-    resources:
-      limits:
-        memory: "64Mi"
-        cpu: "0.2"
-    ports:
-      - containerPort: 80
+    image: nginx
+  tolerations:
+  - key: "key1"
+    operator: "Equal"
+    value: "value1"
+    effect: "NoSchedule"    
+
