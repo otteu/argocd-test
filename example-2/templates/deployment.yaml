@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: example-2-nginx
-        image: otteu/api-tester01:latest
+        image: otteu/test:latest
         resources:
           limits:
             memory: "64Mi"
