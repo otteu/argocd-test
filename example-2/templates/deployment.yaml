@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-helloworld
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: argocd-helloworld
+  template:
+    metadata:
+      labels:
+        app: argocd-helloworld
+    spec:
+      containers:
+      - name: example-2-nginx
+        image: nginx
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "0.1"
+        ports:
+        - containerPort: 80
